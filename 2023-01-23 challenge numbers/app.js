@@ -22,6 +22,3 @@ const missingBits = (bits) => {
 
 missingBits([0, 2, 3, 4, 19, 21, 22, 44]);
 
-// let array = [2,3,20,27,29]
-
-// console.log(array[0] - array[-1])
