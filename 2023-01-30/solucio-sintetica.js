@@ -6,13 +6,8 @@ const generateArrays = (int) => {
   let array = [];
   for (let i = 1; i <= int; i++) {
     array.push([i]);
+    if (i >= 2) array[i - 1] = [...array[i - 2], i];
   }
-  const result = array.map(item => {
-    for (j = item[0]; j > 1; j--) {
-      item.unshift(j-1);
-    }
-    return item;
-  });
-  console.log(result);
+  console.log(array);
 };
 generateArrays(5);
